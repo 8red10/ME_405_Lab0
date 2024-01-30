@@ -16,4 +16,4 @@ In an introduction to MicroPython and the Thonny Python IDE, we measured the ste
 
 ![voltage (volts) plotted as a function of time (milliseconds)](./lab0_plot.png)
 
-The graphical representation of the step response.
+Figure 1. The graphical representation of the step response.
