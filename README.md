@@ -2,7 +2,9 @@
 
 ### Authors
 By: Jack Krammer, Ahren Dosanjh, and Lorenzo Pedroza
+
 California Polytechnic State University
+
 January 29, 2024
 
 ### Description
@@ -10,4 +12,4 @@ In an introduction to MicroPython and the Thonny Python IDE, we measured the ste
 
 ### Results
 The graphical representation of the step response.
-![voltage (volts) plotted as a function of time (milliseconds)](./lab0_data.csv)
+![voltage (volts) plotted as a function of time (milliseconds)](./lab0_data.png)
