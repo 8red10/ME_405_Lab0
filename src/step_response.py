@@ -1,11 +1,11 @@
 """!
 @file step_response.py
 This file contains code for a step response program using an ADC and timer interrupt.
-
-TODO: Write a function step_response() which measures the time response of the output
+Contains a function step_response() which measures the time response of the output
 voltage at pin B0 in response to a change from 0V to 3.3V at the input at pin C0.
-Have the program print measurements in two columns, CSV style: the time in
+The program prints measurements in two columns, CSV style: the time in
 milliseconds since the input step, and the voltage at that time.
+The program then plots the data read 
 
 @author Ahren Dosanjh, Jack Krammer, and Lorenzo Pedroza
 @date   16-Jan-2024
@@ -59,13 +59,10 @@ def print_vals():
     """
     # intitialize the time variable
     t = 0
-    # intitialize the variable checking if there is more in the queue
-    more_in_queue = int_queue.any()
     # prints the data in CSV format
-    while more_in_queue:
+    while int_queue.any():
         print('' + str(t) + ',' + str(adc_voltage(int_queue.get())))
         t += TIMER_INTERVAL
-        more_in_queue = int_queue.any()
     
 def step_response(period_ms=10):
     """!
